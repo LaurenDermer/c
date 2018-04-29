@@ -1,0 +1,3 @@
+Please enter the length to check in the array: Please enter the first pointer to compare: Please enter the second pointer to compare: Please enter the array to start the comparison: 
+The result is: 0
+

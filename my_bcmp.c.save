@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX 512
+#define GOOD 0
+#define BAD 1
+
+int my_bcmp(const void *b1, const void *b2, size_t len);
+
+int main()
+{
+	int length;
+	int p1;
+	int p2;
+	char array[MAX];
+
+	printf("Please enter the length to check in the array: ");
+	scanf("%d" , &length);
+
+	printf("Please enter the first pointer to compare: ");
+	scanf("%d" , &p1);
+
+	printf("Please enter the second pointer to compare: ");
+	scanf("%d" , &p2);
+
+	getchar();
+
+	printf("Please enter the array to start the comparison: ");
+	fgets(array , MAX , stdin);
+
+	printf("\nThe result is: %d\n\n" , my_bcmp(&array[p1] , &array[p2] , length));
+
+	return 0;
+}
+
+int my_bcmp(const void *b1, const void *b2, size_t len)
+{
+	const char *check1 = b1;
+	const char *check2 = b2;
+
+	printf("%c , %c", *check1, *check2);
+
+	for (;len>0;len--)
+	{
+		if (*check1 != *check2)
+			return flag=1		        printf("%c , %c", *check1, *check2);
+
+		check1++;
+		check2++;
+	}
+
+	return flag;
+}

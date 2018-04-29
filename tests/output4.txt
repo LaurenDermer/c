@@ -1,0 +1,1 @@
+Please enter the length to check in the array: Please enter the first pointer to compare: Please enter the second pointer to compare: The pointer cannot be negative.
